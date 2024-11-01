@@ -51,7 +51,7 @@ def main():
     st.header("🌼🌼🌼 Chatbot for GPT4ALL 🌼🌼🌼")
 
     index = create_index(file_path='./data', 
-        chunk_size=512, chunk_overlap=20, model="gpt-4o-mini", temperature=0, 
+        chunk_size=512, chunk_overlap=20, gpt_model="gpt-4o-mini", temperature=0, 
         system_prompt="""
     You are an teacher, working in LLM like GPT sector. Please answer concisely and briefly.
     Start your answer with 'Great! An intelligent question!'.
@@ -71,9 +71,6 @@ if __name__ == "__main__":
     main()
 
 
-# how much cost to gpu?
-# how much spend on OpenAI?
-# what model is gpt4all based on?
 # import os
 # import streamlit as st
 # from llama_index.core.node_parser import SentenceSplitter
